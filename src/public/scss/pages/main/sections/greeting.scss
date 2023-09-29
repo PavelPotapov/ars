@@ -1,0 +1,119 @@
+.greeting {
+	padding-left: 81px;
+	position: relative;
+	&__title {
+		color: var(--color-blue-main);
+		font-family: var(--font-third);
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 95px;
+	}
+	&__info {
+		color: var(--color-blue-main);
+		font-family: var(--font-third);
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 95px;
+	}
+	&__subinfo {
+		color: var(--color-blue-main);
+		font-family: var(--font-third);
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 95px;
+		margin-bottom: 30px;
+	}
+
+	&__application {
+		max-width: 625px;
+		text-align: center;
+		margin-bottom: 62px;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 20px;
+	}
+
+	&__message {
+		color: var(--color-blue-main);
+		text-align: center;
+		font-family: var(--font-third);
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 20px; /* 83.333% */
+		max-width: 600px;
+		width: 100%;
+		margin-bottom: 45px;
+	}
+
+	&__media {
+		display: flex;
+		max-width: 600px;
+		width: 100%;
+		justify-content: center;
+		column-gap: 60px;
+		margin-bottom: 40px;
+	}
+
+	&__consultation {
+		color: var(--color-blue-main);
+		text-align: center;
+		font-family: var(--font-main);
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-decoration-line: underline;
+		width: 100%;
+		max-width: 876px;
+	}
+
+	&__practic {
+		color: var(--color-blue-main);
+		text-align: center;
+		font-family: var(--font-third);
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 100px; /* 416.667% */
+		max-width: 325px;
+	}
+
+	&__wrapper {
+		padding-top: 33px;
+		padding-left: 32px;
+		border-top: 3px solid var(--color-blue-main);
+		border-bottom: 3px solid var(--color-blue-main);
+		border-left: 3px solid var(--color-blue-main);
+		background-image: url("../../../../img/profile1.png");
+		background-repeat: no-repeat;
+		background-position: 100% 54px;
+		background-size: 596px 813px;
+		position: relative;
+		&::before {
+			content: "";
+			width: calc(50vw - 81px + 30px);
+			height: 3px;
+			border-bottom: 3px solid var(--color-blue-main);
+			position: absolute;
+			display: block;
+			top: -3px;
+			left: calc(50%);
+		}
+
+		&::after {
+			content: "";
+			width: calc(50vw - 81px + 30px);
+			height: 3px;
+			border-bottom: 3px solid var(--color-blue-main);
+			position: absolute;
+			display: block;
+			bottom: -3px;
+			left: calc(50%);
+		}
+	}
+}

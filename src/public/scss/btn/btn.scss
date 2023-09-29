@@ -1,0 +1,79 @@
+.btn-application {
+	padding: 24px 45px;
+	background-color: transparent;
+	color: var(--color-blue-main);
+	border-radius: 20px;
+	border: 1px solid var(--color-blue-main);
+	cursor: pointer;
+	transition: background-color 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-application:hover {
+	background-color: var(--color-blue-main);
+	color: var(--color-text-white);
+}
+
+.btn-application:active {
+	box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+		1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+		2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+		2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+}
+
+.burger {
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	border: none;
+	background: transparent;
+	width: 40px;
+	height: 26px;
+	margin: 30px auto;
+	z-index: 1;
+}
+.burger::before,
+.burger::after {
+	content: "";
+	left: 0;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 4px;
+	border-radius: 10px;
+	background: var(--color-blue-main);
+}
+.burger::before {
+	top: 0;
+	box-shadow: 0 11px 0 var(--color-blue-main);
+	transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+}
+.burger::after {
+	bottom: 0;
+	transition: bottom 0.3s 0.15s, transform 0.3s;
+}
+.burger.active::before {
+	top: 11px;
+	transform: rotate(45deg);
+	box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+	transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+}
+.burger.active::after {
+	bottom: 11px;
+	transform: rotate(-45deg);
+	transition: bottom 0.3s, transform 0.3s 0.15s;
+}
+
+@include desktop2() {
+	.btn-application {
+		padding: 12px 25px;
+	}
+}
+
+@include laptop {
+	.burger {
+		display: block;
+		margin-right: 20px;
+	}
+}
