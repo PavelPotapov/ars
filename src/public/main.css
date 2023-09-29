@@ -28,26 +28,18 @@ h6 {
 	margin: 0;
 }
 
-/* html {
-	overflow-x: hidden;
-} */
-
-/* * {
-	outline: 1px solid ;
-} */
-
-/* html,
-body {
-	overflow-x: hidden;
-} */
-
-body {
+html {
 	overflow-x: hidden;
 }
 
+body {
+	position: relative;
+	overflow-x: hidden;
+}
+/* 
 * {
 	outline: 1px solid green !important;
-}
+} */
 
 :root {
 	--font-main: "Roboto", sans-serif;

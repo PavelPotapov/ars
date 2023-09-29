@@ -54,32 +54,32 @@
 
 @include tablet2() {
 	.greeting {
+		padding-left: 7px;
 		&__wrapper {
 			// background-position: 211px 110px;
-             background-position: 130px -95px;
+			background-position: 40px -95px;
 			padding-top: 77px;
+			padding-left: 10px;
 		}
 
 		&__title {
 			font-size: 21px;
-            line-height: 40px;
+			line-height: 40px;
 		}
 
-        &__info {
+		&__info {
 			font-size: 23px;
-            line-height: 40px;
+			line-height: 40px;
 		}
 
-        &__message {
-            display: none;
-        }
-        
+		&__message {
+			display: none;
+		}
+
 		&__subinfo {
 			font-size: 13px;
-            line-height: 40px;
+			line-height: 40px;
 		}
-
-
 	}
 }
 
@@ -87,10 +87,9 @@
 	.greeting {
 		padding-left: 7px;
 
-
 		&__wrapper {
 			padding-left: 10px;
-            background-position: 37px -95px;
+			background-position: 37px -95px;
 		}
 		&__title {
 			font-size: 21px;
